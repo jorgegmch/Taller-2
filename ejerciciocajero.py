@@ -12,7 +12,6 @@ def mostrar_menu():
 isActive=True
 saldo=100000
 
-
 while isActive:
     try:
         os.system("cls")
@@ -33,6 +32,7 @@ while isActive:
                 retiro=int(input("\nIngrese el monto que desea retirar: "))
                 if retiro>saldo:
                     print("Saldo insuficiente. Intente con otra cantidad.")
+                    os.system("pause")
                 else:
                     saldo=saldo-retiro
                     print(f"\nHas retirado un total de: {retiro:,.2f} \nTu saldo actual es de: {saldo:,.2f}\n")

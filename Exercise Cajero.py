@@ -31,7 +31,7 @@ while isActive:
             case 3:
                 retiro=int(input("\nIngrese el monto que desea retirar: "))
                 if retiro>saldo:
-                    print("Saldo insuficiente. Intente con otra cantidad.")
+                    print("\nSaldo insuficiente. Intente con otra cantidad.\n")
                     os.system("pause")
                 else:
                     saldo=saldo-retiro

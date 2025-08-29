@@ -41,8 +41,8 @@ while isActive:
                 print("\nMUCHAS GRACIAS POR USAR CAJEROS BANCARROTA S.A.\n")
                 isActive=False
             case _:
-                print("Opción no valida. Vuelva a intentar.")
+                print("\nOpción no valida. Vuelva a intentar.\n")
                 os.system("pause")
     except ValueError:
-        print("\nError: Solo se permiten numeros.\n")
+        print("\nError: Solo se permiten numeros. Vuelva a intentar.\n")
         os.system("pause")
